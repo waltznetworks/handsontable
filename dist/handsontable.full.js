@@ -7,7 +7,7 @@
  * Licensed under the MIT license.
  * http://handsontable.com/
  *
- * Date: Wed Apr 15 2015 18:35:45 GMT-0700 (PDT)
+ * Date: Mon Nov 09 2015 13:12:00 GMT-0800 (PST)
  */
 /*jslint white: true, browser: true, plusplus: true, indent: 4, maxerr: 50 */
 
@@ -22054,7 +22054,7 @@ WalkontableViewport.prototype.getWorkspaceWidth = function () {
   if (scrollHandler !== window){
       overflow = this.instance.wtScrollbars.horizontal.scrollHandler.style.overflow;
 
-    if (overflow == "scroll" || overflow == "hidden" || overflow == "auto") {
+    if (overflow == "scroll" || overflow == "hidden" || overflow == "auto" || overflow === "") {
       //this is used in `scroll.html`
       //TODO test me
       return Math.max(width, scrollHandler.clientWidth);
