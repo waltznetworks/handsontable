@@ -49,7 +49,7 @@ WalkontableViewport.prototype.getWorkspaceWidth = function () {
   if (scrollHandler !== window){
       overflow = this.instance.wtScrollbars.horizontal.scrollHandler.style.overflow;
 
-    if (overflow == "scroll" || overflow == "hidden" || overflow == "auto") {
+    if (overflow == "scroll" || overflow == "hidden" || overflow == "auto" || overflow === "") {
       //this is used in `scroll.html`
       //TODO test me
       return Math.max(width, scrollHandler.clientWidth);
